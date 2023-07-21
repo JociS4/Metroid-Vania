@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Inimigos",
-    "path": "folders/Objetos/Inimigos.yy",
+    "name": "Esqueleto",
+    "path": "folders/Objetos/Inimigos/Esqueleto.yy",
   },
   "parentObjectId": {
     "name": "obj_inimigo_pai",

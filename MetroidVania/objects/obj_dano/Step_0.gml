@@ -10,8 +10,12 @@ for(var i = 0; i < quantidade; i++){
 	//checando o atual
 	var atual = outro_lista[| i];
 	
-	//show_message(object_get_name(atual.object_index));
+	//checando se o atual esta ivencivel
+	if(atual.invencivel){
+		continue;
+	}
 	
+	//show_message(object_get_name(atual.object_index));
 	//checando se a colisão é com o filho do meu pai
 	if(object_get_parent(atual.object_index) != object_get_parent(pai.object_index)){
 		
@@ -33,8 +37,10 @@ for (var i = 0; i < tam ; i++){
 	outro = aplicar_dano[| i].id;
 	if (outro.vida_atual > 0){
 		
-		outro.estado = "dano";
-		outro.image_index = 0;
+		if(outro.delay <= 0){
+			outro.estado = "dano";
+			outro.image_index = 0;
+		}
 		outro.vida_atual -= dano;
 		
 		//preciso checar se estou acertando o inimigo
@@ -42,6 +48,11 @@ for (var i = 0; i < tam ; i++){
 		if(object_get_parent(outro.object_index) == obj_inimigo_pai){
 			//screenshake nos inimigos
 			screenshake(2);
+			
+			//garantindo que o inimigo vai morrer
+			if(outro.vida_atual <= 0){
+				outro.estado = "morte";
+			}
 		}
 	}
 }
@@ -49,7 +60,19 @@ for (var i = 0; i < tam ; i++){
 //destruindo listas
 ds_list_destroy(aplicar_dano);
 ds_list_destroy(outro_lista);
-instance_destroy();
+
+if (morrer){
+	instance_destroy();
+}
+else{
+	y = pai.y - pai.sprite_height/4; 
+	
+	
+	if(quantidade){
+		instance_destroy();
+	}
+
+}
 
 /*/Se esta tocando em alguem
 if(outro){

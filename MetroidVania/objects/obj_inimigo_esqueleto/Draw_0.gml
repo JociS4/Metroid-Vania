@@ -7,3 +7,5 @@ event_inherited();
 
 //desenahdo linha de distancia para ataque
 //draw_line(x, y - sprite_height/2, x + (dist * xscale), y - sprite_height/2)
+
+draw_text(x, y -100,vida_atual);

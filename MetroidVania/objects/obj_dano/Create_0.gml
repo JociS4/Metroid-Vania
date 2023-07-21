@@ -6,3 +6,5 @@ image_alpha = 1;
 
 //lista para definir os inimigos a receber dano coletivo
 aplicar_dano = ds_list_create();
+
+morrer = true;

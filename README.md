@@ -12,3 +12,6 @@ https://jesse-m.itch.io/
 
 Link para o criador das sprites do player:
 https://rvros.itch.io/animated-pixel-hero
+
+Link para o criador das sprites do Boss Minotauro:
+https://elthen.itch.io/2d-pixel-art-minotaur-sprites

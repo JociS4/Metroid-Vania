@@ -43,7 +43,7 @@
   "origin": 9,
   "parent": {
     "name": "Esqueleto",
-    "path": "folders/Sprites/Inimigos/Esqueleto.yy",
+    "path": "folders/Sprites/Inimigos/Random/Esqueleto.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
