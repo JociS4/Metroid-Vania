@@ -68,7 +68,7 @@ switch(estado){
 	
 	case "ataque":
 	{
-		atacando(spr_inimigo_esqueleto_attack, 8, 15, sprite_width/2, -sprite_height/3);
+		atacando(spr_inimigo_esqueleto_attack, 8, 15, sprite_width/2, -sprite_height/3,  1.5, 1);
 		break;
 	}
 	

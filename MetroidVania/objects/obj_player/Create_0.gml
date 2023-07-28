@@ -11,14 +11,20 @@ can.alvo = id;
 // Inherit the parent event
 event_inherited();
 
-vida_max = 3;
+
+som_ataque = [snd_ataque1_player, snd_ataque2_player, snd_ataque3_player];
+som_dano = snd_dano_player;
+som_morte = snd_morte_player;
+
+
+vida_max = 5;
 vida_atual = vida_max;
 
 max_velh = 4;
 max_velv = 7;
 dash_vel = 8;
 
-mostra_estado = true;
+mostra_estado = false;
 
 combo = 0;
 dano = noone;
@@ -42,8 +48,8 @@ dash_delay = room_speed * 2;
 dash_timer = 0;
 
 //controle de power ups
-//Power ups [pular deslizando, dash aereo]
-global.power_ups = [false, false];
+//Power ups [pular deslizando, dash aereo, ataque aereo para baixo]
+global.power_ups = [false, false, false];
 
 //metodo para iniciar o ataque
 ///@method inicia_ataque(chao)
@@ -55,7 +61,7 @@ inicia_ataque = function(chao){
 	}
 	// não estou no chão
 	else{
-		if(keyboard_check(ord("S"))){
+		if(keyboard_check(ord("S"))  && global.power_ups[2]){
 			estado = "ataque aereo baixo";
 			velh = 0;
 			image_index = 0;

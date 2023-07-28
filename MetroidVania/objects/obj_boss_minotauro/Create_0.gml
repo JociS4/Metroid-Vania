@@ -5,7 +5,7 @@
 event_inherited();
 
 // adicionando atributos do boss
-vida_max = 12;
+vida_max = 7  * global.dificuldade;
 vida_atual = vida_max;
 
 max_velh = 3;
@@ -21,4 +21,4 @@ provocar_delay = room_speed * 2;
 tempo_provocar = provocar_delay;
 
 //subState
-ataque = irandom(2);
+ataques = irandom(2);

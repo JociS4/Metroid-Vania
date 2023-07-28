@@ -4,9 +4,13 @@
 // Inherit the parent event
 event_inherited();
 
+som_ataque = 0;
+som_dano = 0;
+som_morte = snd_morte;
+
 max_velh = 1;
 
-vida_max = 1;
+vida_max = 1 * global.dificuldade;
 vida_atual = vida_max;
 
 massa = 2;

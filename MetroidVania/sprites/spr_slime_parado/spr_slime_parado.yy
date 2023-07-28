@@ -26,7 +26,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"fc93eca5-bff6-4924-acd9-2cd86359af48","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 9,
+  "origin": 7,
   "parent": {
     "name": "Slime",
     "path": "folders/Sprites/Inimigos/Random/Slime.yy",
@@ -65,7 +65,7 @@
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 13,
+    "xorigin": 16,
     "yorigin": 25,
   },
   "swatchColours": null,

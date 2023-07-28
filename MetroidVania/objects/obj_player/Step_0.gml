@@ -152,7 +152,7 @@ switch(estado){
 			velh = 0;
 		}
 		
-		//trocando de sprite se Eu toqui na parede
+		//trocando de sprite se Eu toquei na parede
 		var wall = place_meeting(x + sign(velh), y, obj_block);
 		
 		//So vou conseguir fazer isso se Estiver com o power up
@@ -165,6 +165,7 @@ switch(estado){
 				velv = -max_velv;
 				//indo para a direita
 				mid_velh = (max_velh * 2) * sign(velh) * -1;
+				
 			}
 			
 			//tocando de sprite
@@ -217,6 +218,7 @@ switch(estado){
 			dano.dano = ataque * ataque_mult;
 			dano.pai = id;
 			posso = false;
+			audio_play_sound(som_ataque[0],5,false);
 		}
 		
 		//Configurando buff
@@ -279,6 +281,7 @@ switch(estado){
 			dano.dano = ataque;
 			dano.pai = id;
 			posso = false;
+			audio_play_sound(som_ataque[2],5,false);
 		}
 		
 		
@@ -308,6 +311,8 @@ switch(estado){
 			sprite_index = spr_player_ataque_ar_baixo_ready;
 			image_index = 0;
 			ataque_baixo = true;
+			audio_play_sound(som_ataque[1],5,false);
+			
 		}
 		
 		//indo para o loop
@@ -327,6 +332,7 @@ switch(estado){
 				
 				//criando screenshake direcional
 				screenshake(8,true,270);
+				
 			}
 			else{
 				if(image_index >= image_number - .2){
@@ -413,6 +419,7 @@ switch(estado){
 	#region //dano
 	case "dano":
 	{
+		audio_play_sound(som_dano,1,false);
 		if (sprite_index != spr_player_hit){
 			image_index = 0;
 			
@@ -464,6 +471,11 @@ switch(estado){
 		//ficando parado no final da animação
 		if(image_index >= image_number -1){
 			image_index = image_number -1;
+
+		}
+		
+		if (keyboard_check_released(vk_enter)){
+			game_restart();
 		}
 	}
 	#endregion
@@ -482,5 +494,11 @@ switch(estado){
 	}
 	#endregion
 }
-
-if (keyboard_check(vk_enter)) game_restart();
+if (keyboard_check_released(vk_escape)){
+	if(window_get_fullscreen() == false){
+	    window_set_fullscreen(true);
+	}
+	else {
+		window_set_fullscreen(false);
+	}
+}

@@ -5,6 +5,8 @@
 //desenhando tela de game over
 if (game_over){
 	
+	audio_play_sound(snd_gameover, 2, true);
+	
 	//pegando informações
 	var x1 = camera_get_view_x(view_camera[0]);
 	var w = camera_get_view_width(view_camera[0]);
@@ -53,6 +55,7 @@ if (game_over){
 		draw_set_color(c_white);
 		draw_text(meio_w, meio_h, "G a m e - O v e r");
 		draw_set_font(-1);
+		
 		
 		draw_text(meio_w, meio_h + 40, "Press ENTER to restart");
 	

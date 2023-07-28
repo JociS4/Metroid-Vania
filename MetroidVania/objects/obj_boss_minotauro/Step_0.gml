@@ -53,7 +53,7 @@ switch(estado){
 				velh = 0;
 				estado = "ataque";
 				
-				ataque = irandom(2);
+				ataques = irandom(2);
 			}
 		}
 		
@@ -62,7 +62,7 @@ switch(estado){
 	
 	case "ataque":
 	{
-		switch(ataque){
+		switch(ataques){
 			//primeiro ataque
 			case 0:
 				atacando(spr_boss_minotauro_ataque1, 2, 6, sprite_width / 2, - sprite_height / 4, 2, 2, "provocando");

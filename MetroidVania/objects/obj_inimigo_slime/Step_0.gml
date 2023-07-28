@@ -64,12 +64,13 @@ switch(estado){
 	
 	case "ataque":
 	{
-		atacando(spr_slime_ataque, 2, 4, sprite_width/2, -sprite_height/3);
+		atacando(spr_slime_ataque, 2, 4, sprite_width/2, -sprite_height/4, 1.5, 1);
 		break;
 	}
 	
 	case "dano":
 	{
+		
 		leva_dano(spr_slime_dano, 3);
 		break;
 	}
