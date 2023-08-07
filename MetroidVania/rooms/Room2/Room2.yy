@@ -28,6 +28,7 @@
     {"name":"inst_1D6F8914","path":"rooms/Room2/Room2.yy",},
     {"name":"inst_4D308E2","path":"rooms/Room2/Room2.yy",},
     {"name":"inst_1395B7B7","path":"rooms/Room2/Room2.yy",},
+    {"name":"inst_67CE1424","path":"rooms/Room2/Room2.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -46,6 +47,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5DB44529","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_inimigo_esqueleto","path":"objects/obj_inimigo_esqueleto/obj_inimigo_esqueleto.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1076.0,"y":365.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1D6F8914","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_inimigo_esqueleto","path":"objects/obj_inimigo_esqueleto/obj_inimigo_esqueleto.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1445.0,"y":364.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4D308E2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_inimigo_esqueleto","path":"objects/obj_inimigo_esqueleto/obj_inimigo_esqueleto.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1701.0,"y":364.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_67CE1424","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_boss_morte","path":"objects/obj_boss_morte/obj_boss_morte.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":161.0,"y":343.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"t_fundo","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":24,"SerialiseWidth":113,"TileCompressedData":[
 -75,0,-38,-2147483648,-75,0,-38,-2147483648,-75,0,-38,-2147483648,-75,0,-38,-2147483648,-75,0,-38,-2147483648,4,91,92,91,92,-27,0,8,91,92,91,92,91,92,91,92,-13,0,8,91,92,91,92,91,92,91,92,-15,0,-38,-2147483648,4,112,113,112,113,-27,0,8,112,113,112,113,112,113,112,113,-13,0,8,112,113,112,113,112,113,112,113,-15,0,-34,-2147483648,4,91,92,91,92,-75,0,-34,-2147483648,4,112,113,112,113,-75,0,-38,-2147483648,-75,0,-38,-2147483648,-75,0,-38,-2147483648,-75,0,-38,-2147483648,-75,

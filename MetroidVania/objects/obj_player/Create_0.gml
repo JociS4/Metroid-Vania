@@ -12,10 +12,11 @@ can.alvo = id;
 event_inherited();
 
 
+
+
 som_ataque = [snd_ataque1_player, snd_ataque2_player, snd_ataque3_player];
 som_dano = snd_dano_player;
 som_morte = snd_morte_player;
-
 
 vida_max = 5;
 vida_atual = vida_max;
@@ -46,6 +47,9 @@ dash_aereo = true;
 
 dash_delay = room_speed * 2;
 dash_timer = 0;
+
+
+
 
 //controle de power ups
 //Power ups [pular deslizando, dash aereo, ataque aereo para baixo]

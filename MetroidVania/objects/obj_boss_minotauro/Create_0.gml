@@ -5,7 +5,7 @@
 event_inherited();
 
 // adicionando atributos do boss
-vida_max = 7  * global.dificuldade;
+vida_max = 9  * global.dificuldade;
 vida_atual = vida_max;
 
 max_velh = 3;

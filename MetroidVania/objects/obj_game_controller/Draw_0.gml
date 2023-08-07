@@ -5,7 +5,7 @@
 //desenhando tela de game over
 if (game_over){
 	
-	audio_play_sound(snd_gameover, 2, true);
+	//audio_play_sound(snd_gameover, 2, false);
 	
 	//pegando informações
 	var x1 = camera_get_view_x(view_camera[0]);

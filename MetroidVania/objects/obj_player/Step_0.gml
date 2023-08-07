@@ -184,7 +184,8 @@ switch(estado){
 			aplicando_gravidade();
 			
 			//diminuindo valor do mid_velh
-			mid_velh = lerp(mid_velh, 0, 0.01);
+			mid_velh = lerp(mid_velh, 0, 0.04);
+			
 		}
 		
 		//indo para o dash aereo
@@ -193,6 +194,7 @@ switch(estado){
 			estado = "dash aereo";
 		}
 		
+	
 		break;
 	}
 	#endregion
@@ -305,6 +307,7 @@ switch(estado){
 	case "ataque aereo baixo":
 	{
 		aplicando_gravidade();
+		mid_velh = 0;
 		velv += .5;
 		velh = 0;
 		if(!ataque_baixo){
@@ -419,7 +422,7 @@ switch(estado){
 	#region //dano
 	case "dano":
 	{
-		audio_play_sound(som_dano,1,false);
+		
 		if (sprite_index != spr_player_hit){
 			image_index = 0;
 			
@@ -452,8 +455,9 @@ switch(estado){
 	
 	#region //morrendo
 	case "morte":
-	{
+	{	
 		velh = 0;
+		mid_velh = 0;
 		image_alpha = 1;
 		//checando se o controlador existe
 		if(instance_exists(obj_game_controller)){
@@ -467,7 +471,6 @@ switch(estado){
 			
 		}
 		sprite_index = spr_player_dead;
-		
 		//ficando parado no final da animação
 		if(image_index >= image_number -1){
 			image_index = image_number -1;
@@ -494,6 +497,7 @@ switch(estado){
 	}
 	#endregion
 }
+
 if (keyboard_check_released(vk_escape)){
 	if(window_get_fullscreen() == false){
 	    window_set_fullscreen(true);

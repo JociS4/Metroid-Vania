@@ -10,7 +10,7 @@ som_morte = snd_morte;
 
 max_velh = 1;
 
-vida_max = 1 * global.dificuldade;
+vida_max = 2 * global.dificuldade;
 vida_atual = vida_max;
 
 massa = 2;
